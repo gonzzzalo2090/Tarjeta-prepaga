@@ -42,6 +42,10 @@ img {
     width: 90%;
 }
 
+.heading {
+    text-align: center;
+    margin:5rem
+}
 
 
 /************header*****************/
@@ -168,6 +172,7 @@ img {
 .nucleus__heading {
     text-align: center;
     margin-bottom: 5rem;
+    font-size: 5rem;
 }
 
 
@@ -206,7 +211,8 @@ img {
 }
 @media (min-width: 768px) { 
     .nucleus__imagen {
-        max-width: 85%;
+        max-width: 100%;
+        width: 42rem;
         margin-left: 5rem;
         display: grid;
     }   
@@ -246,7 +252,7 @@ img {
     color: #6834a6;
     text-align: center;
     font-size: 3rem;
-    margin: 0; 
+    margin: 2rem; 
     line-height: 0;
     padding-top: 2rem;
 }
@@ -260,8 +266,14 @@ img {
     background-color: #6834a6;
     padding: 20rem 0;
     position: relative;
-    margin:10rem 0;
+    margin: 0;
     overflow: hidden;
+}
+
+@media (min-width: 768px) { 
+    .seguridad {
+        margin:10rem 0 0 0;
+    }   
 }
 
 .seguridad::before, 
@@ -302,7 +314,7 @@ img {
 
 .seguridad__elemento {
     box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 30%);
-    padding: .2rem 2rem;
+    padding: 2rem 2rem;
     margin-bottom: 5rem;
     width: 100%;
     background-color: #FFF;
@@ -310,4 +322,79 @@ img {
 .seguridad__elemento:hover {
     transform: scale(1.1);
     transition: 0.5s;
+}
+/********************Comisiones***************/
+.comisiones__heading {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    color: #6834a6;
+}
+@media (min-width: 768px) { 
+    .comisiones__heading {
+        color:#000000;
+        font-size: 5rem;
+    }
+}
+
+
+
+@media (min-width: 768px) { 
+    .comisiones__grid {
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr);
+        column-gap: 5rem;
+        align-items: center;}
+}
+
+
+.comisiones__texto {
+    text-align:center;
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+    font-weight: 700;
+}
+@media (min-width: 768px) { 
+    .comisiones__texto {
+        text-align:left;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .comisiones__textoynumero {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+
+.listado__texto {
+    padding: 0;
+    margin:0;
+}
+.listado__numero {
+    color: #6834a6;
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+@media (min-width: 768px) { 
+    .listado__numero {
+        flex-basis: 20rem;
+        text-align: right;
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 768px) { 
+    .comisiones__imagen {
+        width: 85%;
+        margin-left: 10rem;
+    }    
 }
