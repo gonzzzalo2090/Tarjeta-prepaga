@@ -131,14 +131,29 @@ img {
     text-align: center;
     display: block;
     margin-bottom: 4rem;
+    position: relative;
 }
 @media (min-width: 768px) { 
     .header__boton {
         display: inline-block;
-        padding: 1rem 3rem;
+        padding: 0.82rem 3rem;
         margin-top: 3rem;
     }
 }
+@media (min-width: 768px) { 
+    .header__boton::after {
+        content: '';
+        background-image: url(../img/logo-play-store2.png);
+        width: 20rem;
+        height: 7rem;
+        position: absolute;
+        top: -12px;
+        left: 192px;
+        background-repeat: no-repeat;
+        background-size: 18rem;
+    }
+}
+
 
 /*****************navegacion****************/
 .navegacion {
@@ -155,13 +170,19 @@ img {
     }
 }
 
+
 .navegacion__link {
-    color: #6834a6;
+        color: #6834a6;
 }
+
 @media (min-width: 768px) { 
     .navegacion__link {
         color:#FFF
     }
+}
+
+.navegacion__link--blanco {
+    color: var(--blanco);
 }
 
 /******************main***********************/
@@ -470,3 +491,67 @@ img {
     background-repeat: no-repeat;
     background-size: 3rem;
 }
+
+/****************footer*****************/
+.footer__contenedor {
+    background-color: #430b86;
+    padding: 4rem;
+}
+
+.footer__grid {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) { 
+    .footer__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.footer__logo {
+    background-repeat: no-repeat;
+    width: 20rem;
+    margin-left: 0;
+    position: relative;
+}
+
+.footer__logo::after {
+    content: '';
+    background-image: url(../img/logo-play-store2.png);
+    width: 15rem;
+    height: 5rem;
+    position: absolute;
+    top: 43px;
+    left: 25px;
+    background-repeat: no-repeat;
+    background-size: 15rem;
+}
+@media (min-width: 768px) { 
+    .footer__logo::after {
+        top: -7px;
+        left: 210px;
+    }  
+}
+
+
+.footer__grid .navegacion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 7rem;
+    font-weight: 600;
+    gap: 1;
+}
+
+@media (min-width: 768px) { 
+    .footer__grid .navegacion {
+        margin-top: 1rem;
+    }
+}
+
+.navegacion__link__footer {
+        color:#FFF;
+    }  
