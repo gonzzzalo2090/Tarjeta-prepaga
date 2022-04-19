@@ -95,6 +95,10 @@ img {
 .header__logo {
     width: 15rem;
     margin: 0 auto 3rem auto;
+    position: relative;
+    left:10px;
+    top: 10px
+
 }
 @media (min-width: 768px) { 
     .header__logo {
