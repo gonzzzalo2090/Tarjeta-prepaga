@@ -184,7 +184,8 @@ img {
 
 @media (min-width: 768px) { 
     .navegacion__link {
-        color:#FFF
+        color:#FFF;
+        font-weight: 600;
     }
 }
 
